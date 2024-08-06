@@ -9,7 +9,7 @@
     "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
     "singlePage":["about"],
-    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>"
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "onePageListNum":20,
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
     "needComment":1,
