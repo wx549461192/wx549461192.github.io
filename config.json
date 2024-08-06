@@ -3,6 +3,10 @@
     "subTitle":"个人学习生活记录",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "startSite":"08/06/2024",
+    "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
+    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>"
     "onePageListNum":20,
     "bottomText":"转载请注明出处",
     "needComment":1,
