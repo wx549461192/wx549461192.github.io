@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="> [!TIP]
+> 何为KPI
+
+历经漫长的企业实践和管理研究，KPI逐渐成为现代企业绩效管理最为科学有效的方法。">
+<meta property="og:title" content="KPI工具">
+<meta property="og:description" content="> [!TIP]
+> 何为KPI
+
+历经漫长的企业实践和管理研究，KPI逐渐成为现代企业绩效管理最为科学有效的方法。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wx549461192.github.io/post/KPI-gong-ju.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>KPI工具</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-tip {border-left-color:var(--borderColor-success-emphasis, var(--color-success-emphasis));background-color:var(--color-success-subtle);}.markdown-alert.markdown-alert-tip .markdown-alert-title {color: var(--fgColor-success,var(--color-success-fg));}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">KPI工具</h1>
+<div class="title-right">
+    <a href="https://wx549461192.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wx549461192/wx549461192.github.io/issues/12" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p>何为KPI</p>
+</div>
+<p>历经漫长的企业实践和管理研究，KPI逐渐成为现代企业绩效管理最为科学有效的方法。如今，无论是在企业全面的质量管理，还是在企业的战略实施过程中，KPI都是作为核心内容有效指导着企业的管理。今天我们就来介绍这一当前最为流行，最具实效的管理工具——KPI</p>
+<h1>01 .</h1>
+<h2>什么是KPI？</h2>
+<p>KPI（Key Performance Indicator）即关键绩效指标，是通过对组织内部流程的输入端、输出端的关键参数进行设置、取样、计算、分析，衡量流程绩效的一种目标式量化管理指标，是把企业的战略目标分解为可操作的工作目标的工具，是企业绩效管理的基础。KPI可以使部门主管明确部门的主要责任，并以此为基础，明确部门人员的业绩衡量指标。关键绩效指标是用于衡量工作人员工作绩效表现的量化指标，是绩效计划的重要组成部分。建立明确的切实可行的KPI体系，是做好绩效管理的关键。</p>
+<h1>02 .</h1>
+<h2>KPI的理论基础是什么？</h2>
+<p>KPI的理论基础是二八原理，由意大利经济学家帕累托提出的一个经济学原理，即一个企业在价值创造过程中，每个部门和每一位员工的80%的工作任务是由20%的关键行为完成的，抓住20%的关键，就抓住了主体。</p>
+<p>二八原理为绩效考核指明了方向，即考核工作的主要精力要放在关键的结果和关键的过程上。于是，所谓的绩效考核，一定放在关键绩效指标上，考核工作一定要围绕关键绩效指标展开。</p>
+<h1>03 .</h1>
+<h2>如何实施KPI？</h2>
+<h4>1.建立KPI指标体系</h4>
+<p>1）明确企业战略目标在企业会议上利用头脑风暴法和鱼骨分析法等找出企业的业务重点，也就是企业价值评估的重点。然后，再用头脑风暴法找出这些关键业务领域的关键业绩指标(KPI)，即企业级KPI。</p>
+<p>2）明确部门、各职位目标各部门的主管和部门的KPI人员一起再将KPI进一步细分，分解为更细的KPI及各职位的业绩衡量指标。这些业绩衡量指标就是员工考核的要素和依据。这种对KPI体系的建立和测评过程本身，就是统一全体员工朝着企业战略目标努力的过程，也必将对各部门管理者的绩效管理工作起到很大的促进作用。</p>
+<p>3）在制定KPI指标系统时有一个必须遵循的原则——SMART原则，即所制定的目标必须符合以下五个特性：<br>
+S代表具体(Specific)，指绩效考核要切中特定的工作指标，不能笼统；<br>
+M代表可度量(Measurable)，指绩效指标是数量化或者行为化的，验证这些绩效指标的数据或者信息是可以获得的；<br>
+A代表可实现(Attainable)，指绩效指标在付出努力的情况下可以实现，避免设立过高或过低的目标；<br>
+R代表关联性(Relevant)，指绩效指标是与上级目标具明确的关联性,最终与公司目标相结合；<br>
+T代表有时限(Time bound)，注重完成绩效指标的特定期限。</p>
+<h4>2.设定评价标准</h4>
+<p>设立的关键绩效指标必须配合有明确的评价标准才能发挥其作用，对关键绩效指标的评价方法一般包含三种，等级描述法、关键事件法和确定里程碑法。<br>
+等级描述法是对工作成果或工作履行情况进行分级，并对各级别用数据或事实进行具体和清晰的界定，据此对被考核者的实际工作完成情况进行评价的方法。等级描述法适用于考核那些经常或重复进行的工作，因为能够很清楚地用数据或事实描述出各个级别不同。具体操作中，建议分为“优秀”、“良好”、“一般”、“较差”和“不合格”等五个级别，每个级别都有详细的描述定义本级别的状态。当然，也可以根据实际需要，划分3个或7个级别。</p>
+<p>关键事件法是针对工作中的关键事件，制定相应的扣分和加分标准，来对被考核者的业绩进行评价的方法。关键事件法适用于那些关键事件能够充分反映被考核者工作表现或业绩的情况。例如：生产型企业的生产中都要减少工伤事故的发生，对于这个指标，我们可以设定一定的关键事件，如：合格为80分，0次为100分，出现1次一般事故扣5分。</p>
+<p>确定里程碑法是根据任务的运行情况，根据时间节点制定相应的里程碑，在项目考核中运用较多。例如：某企业要申报技术研发中心，此任务是技术部的一个重要的工作。由于这是一项全年的工作，则在季度考核这项工作时，需要在事先明确每个季度后的阶段性成果和项目状态，然后每个节点都有相应的等级描述，确定此项工作的阶段性绩效。</p>
+<h4>3.审核KPI</h4>
+<p>一次性制定的KPI指标并不一定能够反映出企业的关键绩效，审核主要就是为了确保这些关键绩效指标能够全面、客观地反映被评价对象的绩效，而且易于操作。审核的内容常常包含有这样的一些问题：多个评价者对同一个绩效指标进行评价，结果是否能取得一致？这些指标的总和是否可以解释被评估者80%以上的工作目标？跟踪和监控这些关键绩效指标是否可以操作？等等。</p>
+<p>KPI是企业战略目标的层层分解，通过KPI指标的整合和控制，使员工绩效行为与企业目标要求的行为相吻合，不至于出现偏差，有利地保证了公司战略目标的实现。同时，策略性地指标分解，使公司战略目标成了个人绩效目标，员工个人在实现个人绩效目标的同时，也实现公司总体的战略目标。现代企业提倡的是公司与员工的双赢，现代员工注重的是自我价值的实现，KPI将企业和员工的核心诉求完美整合，实现企业持续发展。<br>
+编者：</p>
+<h2>最后提醒几点：</h2>
+<p>1、KPI是自上而下的目标分解；<br>
+2、KPI是关键指标，不是岗位职责的堆砌；<br>
+3、KPI需要制订者和执行者进行充分的沟通、达成共识；<br>
+4、KPI的最最关键部分是其应用，年初定下来，年底要考评兑现；<br>
+5、KPI一般不调整，除非岗位、目标等发生大的变动。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wx549461192.github.io">鸣雁的博客</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("08/06/2024"!=""){
+    var startSite=new Date("08/06/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","wx549461192/wx549461192.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
