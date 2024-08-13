@@ -41,7 +41,7 @@ FQC和OQC有概念、检查对象，目标的区别：
 
 **FQC**：final quality control 最终质量控制 （最终检）。FQC是指包装前所有外观检验。也可以说是全检。
 
-**OQC**：out quality control 出货质量控制 （出货检）。OQC是成品出货抽检。
+**OQC**：outgoing quality control 出货质量控制 （出货检）。OQC是成品出货抽检。
 
 **（2）二者检查对象不同：**
 
