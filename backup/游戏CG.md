@@ -13,3 +13,11 @@
 `Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=998751168&bvid=BV1mx4y1d7dT&cid=1206664526&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
 
 ***
+
+> [!NOTE]
+>【年度巨制】琪计划：出击【2024崩坏3同人大电影】
+[特效小哥studio](https://space.bilibili.com/3066511)
+
+`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113107460425572&bvid=BV1UxpEe7Ej3&cid=25805655409&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
+
+***
